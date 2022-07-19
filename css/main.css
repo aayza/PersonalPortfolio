@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins", arial;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container {
+  background: #081C3C;
+}
+.nav-container a {
+  color: #FDDBF2;
+}
+.nav-container .logo {
+  color: white;
+  font-weight: bold;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  display: flex;
+}
+nav ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2em;
+}
+
+.social-header {
+  display: none;
+}
+
+.mainHero {
+  background: #0A2147;
+  color: #5E93E8;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.shapeDesign {
+  display: none;
+}
+
+.meet {
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+  color: #FFAAE4;
+}
+.meet span {
+  margin-top: 1em;
+  margin-right: 0.5em;
+}
+
+.scroll {
+  width: 30px;
+  margin-top: 2em;
+}
+
+section {
+  padding: 4em 2em;
+  text-align: center;
+}
+
+.aboutDesign {
+  display: none;
+}
+
+.about {
+  position: relative;
+  background-color: #FDDBF2;
+  z-index: -2;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #5E93E8;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  font-size: 0.85em;
+  color: #081C3C;
+}
+
+h2 {
+  color: #0A2147;
+  font-weight: bold;
+  font-size: 2em;
+  display: block;
+  margin-top: -0.4em;
+}
+
+.about-text {
+  color: #061329;
+  margin-bottom: 3em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.knowledge {
+  background: #5E93E8;
+  color: #061329;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.skillRightDesign {
+  display: none;
+}
+
+.leftSkillsDesign {
+  display: none;
+}
+
+.currentSkills {
+  background: #0A2147;
+}
+
+.skills-title {
+  color: #FFAAE4;
+  font-size: 2em;
+  text-align: right;
+}
+
+.skills-container ul li {
+  background: #061329;
+  padding: 2em;
+  margin-bottom: 1em;
+}
+
+.icon-container {
+  height: 300px;
+  display: grid;
+  margin: 0 auto;
+  place-content: center;
+}
+
+.icon-container img {
+  width: 50px;
+  height: 50px;
+}
+
+.skills-container ul {
+  display: block;
+  font-weight: bold;
+  color: #FDDBF2;
+}
+
+.skills-container li {
+  font-weight: 300;
+  color: white;
+  text-align: justify;
+}/*# sourceMappingURL=main.css.map */
