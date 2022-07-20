@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+h1 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
 img {
   width: 100%;
 }
@@ -67,12 +72,12 @@ header {
   display: flex;
   margin: 0 auto;
   width: 200px;
-  font-weight: bold;
+  font-weight: 600;
   color: #FFAAE4;
 }
 .meet span {
   margin-top: 1em;
-  margin-right: 0.5em;
+  margin-right: 1em;
 }
 
 .scroll {
@@ -106,6 +111,17 @@ section {
   z-index: -1;
 }
 
+.about::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: #5E93E8;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
 .subtitle {
   text-transform: uppercase;
   font-weight: 600;
@@ -116,7 +132,7 @@ section {
 
 h2 {
   color: #0A2147;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 2em;
   display: block;
   margin-top: -0.4em;
@@ -131,10 +147,17 @@ h2 {
 
 .knowledge {
   background: #5E93E8;
-  color: #061329;
   display: grid;
-  text-align: center;
   padding: 4em;
+}
+
+.knowledge h1 {
+  color: #061329;
+  font-weight: 900;
+  font-size: 2em;
+  display: block;
+  text-align: center;
+  margin-top: -0.4em;
 }
 
 .skillRightDesign {
@@ -151,31 +174,45 @@ h2 {
 
 .skills-title {
   color: #FFAAE4;
-  font-size: 2em;
   text-align: right;
+  font-weight: 700;
+  font-size: 2em;
+  display: block;
+  margin-top: -1em;
+  margin-bottom: 1em;
+}
+
+.skills-container {
+  width: 70%;
+  margin-left: 3em;
 }
 
 .skills-container ul li {
   background: #061329;
-  padding: 2em;
+  padding: 1em;
   margin-bottom: 1em;
 }
 
 .icon-container {
   height: 300px;
   display: grid;
-  margin: 0 auto;
+  margin: 50 auto;
   place-content: center;
+  display: inline;
+}
+
+.icon-container span {
+  font-weight: 400;
 }
 
 .icon-container img {
-  width: 50px;
-  height: 50px;
+  display: inline;
+  width: 55px;
+  height: 55px;
 }
 
 .skills-container ul {
-  display: block;
-  font-weight: bold;
+  font-weight: 600;
   color: #FDDBF2;
 }
 
