@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 body {
   height: 100vh;
   margin: 0;
@@ -16,8 +16,10 @@ a {
 }
 
 h1 {
-  font-size: 2.25em;
-  font-weight: 700;
+  font-size: 3em;
+  font-weight: 800;
+  color: #CADEFF;
+  text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
 }
 
 img {
@@ -72,8 +74,8 @@ header {
   display: flex;
   margin: 0 auto;
   width: 200px;
-  font-weight: 600;
-  color: #FFAAE4;
+  font-weight: 300;
+  color: #FDDBF2;
 }
 .meet span {
   margin-top: 1em;
@@ -96,53 +98,29 @@ section {
 
 .about {
   position: relative;
-  background-color: #FDDBF2;
+  background-color: #F9E8F0;
   z-index: -2;
-}
-
-.about::before {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: #5E93E8;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
-
-.about::after {
-  content: "";
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: #5E93E8;
-  top: 0;
-  right: 0;
-  z-index: -1;
-}
-
-.subtitle {
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  font-size: 0.85em;
-  color: #081C3C;
 }
 
 h2 {
   color: #0A2147;
   font-weight: 600;
-  font-size: 2em;
+  font-size: 2.5em;
   display: block;
   margin-top: -0.4em;
 }
 
 .about-text {
   color: #061329;
+  font-size: 1em;
   margin-bottom: 3em;
   line-height: 1.8em;
-  font-weight: 500;
+  font-weight: 400;
+}
+
+.photoMe {
+  width: 400px;
+  height: 300px;
 }
 
 .knowledge {
@@ -151,21 +129,21 @@ h2 {
   padding: 4em;
 }
 
-.knowledge h1 {
-  color: #061329;
-  font-weight: 900;
-  font-size: 2em;
+.knowledge h2 {
+  color: #FFFFFF;
   display: block;
-  text-align: center;
+  text-align: left;
   margin-top: -0.4em;
 }
 
-.skillRightDesign {
-  display: none;
-}
-
-.leftSkillsDesign {
-  display: none;
+.subtitle {
+  margin-top: -3em;
+  text-align: left;
+  text-transform: uppercase;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  font-size: 0.85em;
+  color: #D5D5D5;
 }
 
 .currentSkills {
@@ -183,7 +161,8 @@ h2 {
 }
 
 .skills-container {
-  width: 70%;
+  margin-top: 3em;
+  width: 80%;
   margin-left: 3em;
 }
 
@@ -195,20 +174,26 @@ h2 {
 
 .icon-container {
   height: 300px;
-  display: grid;
-  margin: 50 auto;
-  place-content: center;
-  display: inline;
 }
 
-.icon-container span {
-  font-weight: 400;
+figure {
+  margin: 0;
 }
 
-.icon-container img {
-  display: inline;
-  width: 55px;
-  height: 55px;
+.isSkill {
+  width: 6em;
+  height: 6em;
+  display: inline-block;
+}
+
+img.skill {
+  height: 5em;
+  width: 5em;
+  margin-left: 10px;
+}
+
+figcaption {
+  text-align: center;
 }
 
 .skills-container ul {
@@ -220,4 +205,12 @@ h2 {
   font-weight: 300;
   color: white;
   text-align: justify;
+}
+
+h3 {
+  margin-top: -0.1em;
+  font-weight: 500;
+  font-size: 1.25em;
+  color: #9CC2FF;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */
