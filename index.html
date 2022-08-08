@@ -1,3 +1,22 @@
+<!-- 
+//Send email if subject is filled
+if (empty($_POST["from"]))
+{
+    $subject = "subject";
+    $txt = "message";
+    $headers = "from";
+}
+else
+{
+    $to = "aayzaahmed.wfh@gmail.com";
+    $subject = $_POST["subject"];
+    $txt = checkSafeString($_POST["message"]);
+    $headers = $_POST["from"];
+    mail($to, $subject, $txt, "From:" . $headers);
+    echo '"Email sent successfully"';
+} ?> -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,13 +28,14 @@
 
     <div class="nav-container">
         <header>
-            <a href="index.html" class="logo">Aayza Ahmed</a>
+            <a href="#start" class="logo">Aayza Ahmed</a>
         
             <nav>
                 <ul>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="skills.html">Skills/Experience</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#experience">Work</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,11 +49,10 @@
         </div>
     </div>
 
-    <section class="mainHero">
+    <section class="mainHero" id="start">
         <div class="content">
             <h1>Junior Graduate Software Developer</h1>
             <div class="meet">
-                <span></span>
                 <p>Meet Aayza Ahmed</p>
             </div>
             </div>
@@ -50,7 +69,7 @@
 
                     </section>
 
-                    <section class="knowledge">
+                    <section class="knowledge" id="skill">
                         <div class="skillsHero">
                             <h2>Skills</h2>
                             <p class="subtitle">So Far...</p>
@@ -165,17 +184,159 @@
                         </div>
                     </section>
 
-                    <section class="experience">
-                        <h1>Software Experience</h1>
+                    <section class="experience" id="experience">
+                        <h2>Software Experience</h2>
                         <p class="subtitle">Click on card to see more information</p>
 
+                        <div class="skills-container" id="PulsionCard">
+                            <div class="jobTitle">
+
+                            <ul>
+                                <li>
+                                    <h4>Pulsion Technology</h4>
+                                    <p>
+                                        June 2019 - Current Day
+                                        <br>
+                                        Graduate Software Engineer Apprentice
+                                    </p>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+
+                        <div class="skills-container" id="PulsionInfo">
+
+                            <div class="jobInfo">
+                                <ul>
+                                    <li>
+                                        •	Working on PHP Projects <br>
+                                        •	Working on JavaScript tasks <br>
+                                        •	Pair Programming tasks in React/Typescript <br> 
+                                        •	Setting up local development environments <br>
+                                        •	Using Database / SQL queries <br>
+                                        •	First line support for Pulsion helpdesk <br>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
 
+                        <div class="skills-container" id="BabykinCard">
+                            <div class="jobTitle">
 
+                            <ul>
+                                <li>
+                                    <h4>Babykins Prams</h4>
+                                    <p>
+                                        May 2018 - December 2018
+                                        <br>
+                                        Temporary Spreadsheet Administrator
+                                    </p>
+                                </li>
+                            </ul>
+                            </div>
+                        </div>
+
+                        <div class="skills-container" id="BabykinInfo">
+
+                            <div class="jobInfo">
+                                <ul>
+                                    <li>
+                                        •	Working on PHP Projects <br>
+                                        •	Working on JavaScript tasks <br>
+                                        •	Pair Programming tasks in React/Typescript <br> 
+                                        •	Setting up local development environments <br>
+                                        •	Using Database / SQL queries <br>
+                                        •	First line support for Pulsion helpdesk <br>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
 
                     </section>
+
+
+                    <section class="projects" id="projects">
+
+                        <h2>Featured Projects</h2>
+
+                        <div class="project-container">
+
+                            <div class="project-info">
+                            <h4>Cafe Website</h4>
+                            <subtitle>Click here for the GIT repository</subtitle>
+                            <p class="skillsUsed">Skills Used: HTML, CSS, MongoDB, JavaScript</p>
+                            <p class="projectDetails">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dui quam, ornare ac ultricies sed, facilisis in ligula. 
+                                Donec commodo, dolor euismod congue fermentum, libero lacus vulputate sem, ut condimentum justo diam eget ex. 
+                                Etiam id blandit felis.
+                            </p>
+                            </div>
+
+                            <img class="projectPhoto" src="images/project.png" alt="Git">
+                        </div>
+
+                        <div class="project-container">
+                            <div class="project-info">
+                            <h4>MP3 Playlist Creater</h4>
+                            <subtitle>Click here for the GIT repository</subtitle>
+                            <p class="skillsUsed">Skills Used: HTML, CSS, MongoDB, JavaScript</p>
+                            <p class="projectDetails">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dui quam, ornare ac ultricies sed, facilisis in ligula. 
+                                Donec commodo, dolor euismod congue fermentum, libero lacus vulputate sem, ut condimentum justo diam eget ex. 
+                                Etiam id blandit felis.
+                            </p>
+                            </div>
+                            <img class="projectPhoto" src="images/project.png" alt="Git">
+                        </div>
+                    </section>
+
+                    <section class="contact" id="contact">
+
+
+                        <div class="likeLabel">
+                            <h1>Like what you see?</h1>
+                        </div>
+
+
+                        <div class="sendMessage">
+                            <h2>Send A Message</h2>
+
+                            <form action="">
+                                <label for="fname">Subject</label>
+                                <input type="text" name="subject" placeholder="Subject" /><br />
+                                <label for="fname">Name</label>
+                                <input type="email" name="from" placeholder="From" /><br />
+                                <label for="meessage">Subject</label>
+                                <textarea name="message" rows="4" cols="50"></textarea><br />
+                                <button type="submit" value="sendMessage">Submit</button>
+                            </form>
                     
 
+                        </div>
+
+
+                        <div class="email">
+                            <h3>Contact Me</h3>
+                            <span>E-Mail: aayzaahmed.wfh@gmail.com</span>
+                        </div>
+
+                    </section>
+
+                    <section class="thisSite" id="thisSite">
+
+                        <div>
+                            <h3>This Website</h3>
+                            <subtitle><a href="https://github.com/aayza/PersonalPortfolio" target=”_blank”>GIT Repository Here</a></subtitle>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dui quam, ornare ac ultricies sed, facilisis in ligula. Donec commodo, dolor euismod congue fermentum, libero lacus vulputate sem, ut condimentum justo diam eget ex. Etiam id blandit felis. </p>
+                        </div>
+
+                     </section>
+
+
+                    <section class="footer">
+                        
+                    </section>
     </body>
 </html>

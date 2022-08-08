@@ -16,7 +16,7 @@ a {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: 800;
   color: #CADEFF;
   text-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
@@ -28,6 +28,10 @@ img {
 
 .nav-container {
   background: #081C3C;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
 }
 .nav-container a {
   color: #FDDBF2;
@@ -162,8 +166,7 @@ h2 {
 
 .skills-container {
   margin-top: 3em;
-  width: 80%;
-  margin-left: 3em;
+  width: 14;
 }
 
 .skills-container ul li {
@@ -189,7 +192,6 @@ figure {
 img.skill {
   height: 5em;
   width: 5em;
-  margin-left: 10px;
 }
 
 figcaption {
@@ -213,4 +215,152 @@ h3 {
   font-size: 1.25em;
   color: #9CC2FF;
   text-align: center;
+}
+
+.experience {
+  background-color: #081C3C;
+}
+
+.experience h2 {
+  text-align: right;
+  color: white;
+}
+
+.experience .subtitle {
+  text-align: right;
+}
+
+.skills-container .jobTitle ul li h4 {
+  color: #FDDBF2;
+  font-size: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+
+.skills-container .jobTitle ul li p {
+  color: #FFAAE4;
+  margin: 0.5em;
+  text-align: right;
+}
+
+.skills-container .jobInfo ul li {
+  background: #D5D5D5;
+  color: #061329;
+  padding: 1em;
+}
+
+.skills-container .jobInfo {
+  display: none;
+}
+
+.projects {
+  background: #D5D5D5;
+}
+
+.project-container {
+  display: inline-block;
+}
+
+.projects h2 {
+  margin-bottom: 1em;
+}
+
+.project-container h4 {
+  font-size: 1.5em;
+  margin: 0;
+  color: #18386C;
+}
+
+.project-container .project-info {
+  width: 100%;
+}
+
+.project-container subtitle {
+  font-size: 0.9em;
+  color: #FFAAE3;
+}
+
+.project-container .skillsUsed {
+  color: #004112;
+}
+
+.project-container .projectDetails {
+  font-size: 1em;
+}
+
+.project-container .projectPhoto {
+  width: 100%;
+}
+
+.contact {
+  background-color: #081936;
+}
+
+.likeLabel h1 {
+  color: #FFFFFF;
+}
+
+.contact h2 {
+  color: #A7C8FF;
+}
+
+.email span {
+  font-weight: 300;
+  color: #FFFFFF;
+  letter-spacing: 0.1em;
+}
+
+.thisSite {
+  background-color: #5E93E8;
+}
+
+.thisSite h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: #081936;
+  margin-bottom: 0px;
+}
+
+.thisSite subtitle a {
+  margin-top: 0px;
+  color: #FFFFFF;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+}
+
+.footer {
+  background-color: #081C3C;
+}
+
+@media only screen and (min-width: 900px) {
+  .project-container {
+    display: inline-block;
+  }
+  .projects h2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  .project-container h4 {
+    font-size: 1.5em;
+    margin: 0;
+    color: #18386C;
+  }
+  .project-container .project-info {
+    width: 60%;
+    float: left;
+  }
+  .project-container subtitle {
+    font-size: 0.9em;
+    color: #FFAAE3;
+  }
+  .project-container .skillsUsed {
+    color: #004112;
+  }
+  .project-container .projectDetails {
+    font-size: 1em;
+  }
+  .project-container .projectPhoto {
+    width: 35%;
+    float: right;
+  }
 }/*# sourceMappingURL=main.css.map */
